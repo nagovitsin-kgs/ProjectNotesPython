@@ -21,3 +21,11 @@ class Model_Json(object):
 
         self.notes.append(note)
         self.write_json(self.notes)
+
+    def read_note(self, search_id):
+        self.notes = self.read_notes()
+        for note in self.notes:
+            if note.note_id == search_id:
+                return note
+        else:
+            view.display_note_id_not_exist(search_id)
