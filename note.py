@@ -37,3 +37,7 @@ class Note(object):
     @date.setter
     def date(self, date):
         self._date = date
+
+    def __str__(self):
+        return f'\nЗаметка: {self._note_id} \nДата создания(редактирования):' \
+               f' {self._date}\nЗаголовок: {self._title}\nТело: {self._text}\n '
