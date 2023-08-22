@@ -1,3 +1,4 @@
+# Приложение
 import datetime
 from colorama import Fore, Style
 
